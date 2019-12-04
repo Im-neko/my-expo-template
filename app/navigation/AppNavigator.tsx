@@ -4,11 +4,12 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import styled from 'styled-components/native';
 
 import DrawerNavigator from './DrawerNavigator';
+import StackNavigator from './StackNavigator';
 
 
 const RootSwitch = createSwitchNavigator(
   {
-    Home: DrawerNavigator
+    Home: StackNavigator
   },
   {
     initialRouteName: 'Home'
